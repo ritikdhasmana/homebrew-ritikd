@@ -5,11 +5,11 @@
 class Godo < Formula
   desc ""
   homepage "https://github.com/ritikdhasmana/godo"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
-    url "https://github.com/ritikdhasmana/godo/releases/download/v0.2.0/godo_Darwin_all.tar.gz"
-    sha256 "161e6e868183483d89a79ccdb8eb2d726c71b42c75616b6e6adb8965a9680540"
+    url "https://github.com/ritikdhasmana/godo/releases/download/v0.3.0/godo_Darwin_all.tar.gz"
+    sha256 "9b290301bf820240653a1168669eafc7da4d14e29a498ed2d6daf75da8925626"
 
     def install
       bin.install "godo"
@@ -18,16 +18,16 @@ class Godo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ritikdhasmana/godo/releases/download/v0.2.0/godo_Linux_arm64.tar.gz"
-      sha256 "386a2a8c221a626f9e331522cb79811f87038c4d6539d5a737922e80eb517e64"
+      url "https://github.com/ritikdhasmana/godo/releases/download/v0.3.0/godo_Linux_arm64.tar.gz"
+      sha256 "ff28327c99ed38900e45b484e82046152689fe4313346d9986f42abc9eae3ff4"
 
       def install
         bin.install "godo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ritikdhasmana/godo/releases/download/v0.2.0/godo_Linux_x86_64.tar.gz"
-      sha256 "4b123d33097c3ef1e062414ae4ac49d61e0b5bfce261a52764c27374a062b671"
+      url "https://github.com/ritikdhasmana/godo/releases/download/v0.3.0/godo_Linux_x86_64.tar.gz"
+      sha256 "cbe1e66fa682b7af631e15b50d6f6a2049039a3523f1305fa8127cd69c88914e"
 
       def install
         bin.install "godo"
